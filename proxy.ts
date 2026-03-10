@@ -11,7 +11,7 @@ export async function proxy(req: NextRequest) {
   }
 
   if (token && isLoginPage) {
-    return NextResponse.redirect(new URL("/dashboard", req.url))
+    return NextResponse.redirect(new URL("/", req.url))
   }
 }
 
